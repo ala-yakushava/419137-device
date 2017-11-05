@@ -2,20 +2,51 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Каталог - Device</title>
   </head>
   <body>
     <header class="main-header">
-
+      <nav class="main-navigation">
+        <a class="main-header-logo" href="index.html">
+          <img src="img/logo.svg" width="70" height="20" alt="Логотип интернет-магазина «Device»">
+        </a>
+        <ul class="user-navigation">
+          <li class="search">Поиск</li>
+          <li class="login"><a href="#">Валентин Петухов</a></li>
+          <li class="basket"><a href="#">Сравнить</a></li>
+          <li class="compare"><a href="#">Корзина</a></li>
+        </ul>
+        <ul class="site-navigation">
+          <li>
+            <a href="catalog.html">Каталог товаров</a>
+            <ul class="sub-navigation">
+              <li><a href="#">Виртуальная реальность</a></li>
+              <li><a href="#">Моноподы для селфи</a></li>
+              <li><a href="#">Экшн-камеры</a></li>
+            </ul>
+            <ul class="sub-navigation">
+              <li><a href="#">Фитнесс-браслеты</a></li>
+              <li><a href="#">Умные часы</a></li>
+            </ul>
+            <ul class="sub-navigation">
+              <li><a href="#">Квадрокоптеры</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Доставка</a></li>
+          <li><a href="#">Гарантия</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </nav>
     </header>
     <main class="container">
       <h1 class="page-title">Моноподы для селфи</h1>
-
-      <ul class="breadcrumbs-list">
-        <li><a href="index.html">Главная</a></li>
-        <li><a href="catalog.html">Каталог товаров</a></li>
-        <li class="breadcrumbs-current">Моноподы для селфи</li>
-      </ul>
+      <nav class="breadcrumbs">
+        <ul class="breadcrumbs-list">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="catalog.html">Каталог товаров</a></li>
+          <li class="breadcrumbs-current">Моноподы для селфи</li>
+        </ul>
+      </nav>
       <section class="filters">
         <h2>Фильтр</h2>
         <!-- Здесь будет форма -->
@@ -23,14 +54,15 @@
       <section class="sort">
         <h2>Сортировка</h2>
         <ul class="sort-list">
-          <li class="sort-current">По цене</a></li>
+          <li class="sort-current"><a>По цене</a></li>
           <li><a href="#">По типу</a></li>
-          <li><a href="#">По популярности</li>
+          <li><a href="#">По популярности</a></li>
+        </ul>
+        <ul class="order-list">
           <li><a href="#">По убыванию</a></li>
-          <li class="sort-current">По возрастанию</a></li>
+          <li class="order-current"><a>По возрастанию</a></li>
         </ul>
       </section>
-
       <section class="catalog">
         <h2 class="visually-hidden">Список моноподов для селфи</h2>
         <ul class="catalog-list">
@@ -39,13 +71,15 @@
               <a href="catalog-item.html">
                 <span class="catalog-item-title">Любительская селфи палка</span>
               </a>
-                <span class="catalog-item-price">500 руб.</span>
             </h3>
             <p class="catalog-item-image">
-                <img src="img/product-1.jpg" width="220" height="220" alt="Любительская селфи палка">
-                <a class="button" href="#">В корзину</a>
-                <a class="button" href="#">Добавить к сравнению</a>
+              <img src="img/product-1.jpg" width="220" height="220" alt="Любительская селфи палка">
             </p>
+            <p class="catalog-item-cart">
+              <a class="button" href="#">В корзину</a>
+              <a class="button" href="#">Добавить к сравнению</a>
+            </p>
+            <span class="catalog-item-price">500 руб.</span>
           </li>
           <li class="catalog-item">
             <h3>
