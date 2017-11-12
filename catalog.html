@@ -12,9 +12,12 @@
         </a>
       </div>
       <div class="header-navigation">
-        <label>Поиск
-          <input class="search" type="search" name="search" placeholder="Поиск по сайту">
-        </label>
+        <form method="get" action="https://echo.htmlacademy.ru">
+          <label>Поиск
+            <input class="search" type="search" name="search" placeholder="Поиск по сайту">
+          </label>
+          <button class="search-button" type="submit">Найти</button>
+        </form>
         <ul class="user-navigation">
           <li class="login"><a href="#">Валентин Петухов</a></li>
           <li class="login-off"><a href="#">Выйти</a></li>
@@ -59,13 +62,11 @@
       <section class="filters">
         <h2>Фильтр:</h2>
         <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-          <hr>
           <label>Стоимость
             <span class="range-slider">Уменьшить</span>
             <input class="visually-hidden filter-range" type="range" name="price" min="0" max="10000" step="1000">
             <span class="range-slider">Увеличить</span>
           </label>
-          <hr>
           <fieldset>
             <legend>Цвет</legend>
             <ul>
@@ -91,7 +92,6 @@
               </li>
             </ul>
           </fieldset>
-          <hr>
           <fieldset>
             <legend>Bluetooth</legend>
             <ul>
@@ -105,7 +105,7 @@
               </li>
             </ul>
           </fieldset>
-          <button type="submit" class="filter-button button">Показать</button>
+          <button class="filter-button button" type="submit">Показать</button>
         </form>
       </section>
       <section class="sort">
