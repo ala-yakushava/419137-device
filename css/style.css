@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+  color: #464646;
+  letter-spacing: 0.01em;
+
+  background-color: #ffffff;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.main-header {
+  background-color: #f7e296;
+}
+
+.site-navigation {
+  font-family: "Gilroy", Verdana, sans-serif;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 800;
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+.user-navigation,
+.sub-navigation a {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 36px;
+  font-weight: 300;
+  color: #000000;
+  text-transform: none;
+  letter-spacing: 0.01em;
+}
+
+.container h3 {
+  font-family: "Gilroy", Verdana, sans-serif;
+  font-size: 47px;
+  line-height: 1.2;
+  font-weight: 800;
+  color: #000000;
+  letter-spacing: 0.01em;
+  text-align: left;
+}
+
+.promo-item tr:first-child {
+  font-family: "Gilroy", Verdana, sans-serif;
+  font-size: 36px;
+  line-height: 1.2;
+  color: #000000;
+  letter-spacing: 0.01em;
+}
+
+.promo-item tr:last-child {
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.button {
+  font-family: "Gilroy", Verdana, sans-serif;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 800;
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  text-align: center;
+
+  background-color: #f0c52e;
+}
+
+.category {
+  font-family: "Gilroy", Verdana, sans-serif;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 800;
+  letter-spacing: 0.01em;
+}
+
+.service {
+  background-color: #e5e5e5;
+}
+
+.about-item {
+  font-family: "Gilroy", Verdana, sans-serif;
+  font-size: 16px;
+  line-height: 40px;
+  font-weight: 800;
+  color: #000000;
+  list-style-type: circle;
+}
+
+.main-footer {
+  background-color: #464646;
+}
+
+.main-footer a {
+  color: #ffffff;
+}
+
+.contact,
+.contact-address {
+  color: #ffffff;
+  letter-spacing: 0;
+  font-style: normal;
+}
