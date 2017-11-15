@@ -1,29 +1,29 @@
 @font-face {
-font-family: "Open Sans";
-src: url("../fonts/opensans.woff2") format("woff2");
-font-weight: normal;
-font-style: normal;
+  font-family: "Open Sans";
+  src: url("../fonts/opensans.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-font-family: "Open Sans";
-src: url("../fonts/opensanslight.woff2") format("woff2");
-font-weight: 300;
-font-style: normal;
+  font-family: "Open Sans";
+  src: url("../fonts/opensanslight.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
 }
 
 @font-face {
-font-family: "Gilroy";
-src: url("../fonts/gilroyextrabold.woff2") format("woff2");
-font-weight: 800;
-font-style: normal;
+  font-family: "Gilroy";
+  src: url("../fonts/gilroyextrabold.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
 }
 
 @font-face {
-font-family: "Gilroy";
-src: url("../fonts/gilroylight.woff2") format("woff2");
-font-weight: 300;
-font-style: normal;
+  font-family: "Gilroy";
+  src: url("../fonts/gilroylight.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
 }
 
 body {
@@ -32,7 +32,7 @@ body {
 
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 15px;
-  line-height: 30px;
+  line-height: 2;
   font-weight: 300;
   color: #464646;
   letter-spacing: 0.01em;
@@ -45,7 +45,9 @@ a {
   text-decoration: none;
 }
 
-ul {
+.main-header ul,
+.main-footer ul,
+.container ul {
   list-style: none;
 }
 
@@ -61,6 +63,10 @@ ul {
 
   background-color: #f7e296;
   border: none;
+}
+
+.main-header input[type="search"]:hover {
+  opacity: 0.6;
 }
 
 .main-header input[type="search"]:focus {
@@ -82,18 +88,16 @@ ul {
   outline: none;
 
   background-color: #000000;
-  border: 2px solid #000000;
 }
 
 .search-button:active {
   color: #747474;
-  outline: none;
 }
 
 .user-navigation {
   font: inherit;
   line-height: 36px;
-  color: #000000;
+/*  color: #000000;*/
 }
 
 .site-navigation {
@@ -101,7 +105,7 @@ ul {
   font-size: 18px;
   line-height: 1.2;
   font-weight: 800;
-  color: #000000;
+/*  color: #000000;*/
   text-transform: uppercase;
   letter-spacing: 0.2em;
 }
@@ -111,12 +115,11 @@ ul {
   font-size: 15px;
   line-height: 36px;
   font-weight: 300;
-  color: #000000;
+/*  color: #000000;*/
   text-transform: none;
   letter-spacing: 0.01em;
 }
 
-.main-header input[type="search"]:hover,
 .main-header a[href]:hover,
 .main-header a[href]:focus,
 .main-footer a[href]:hover,
@@ -225,16 +228,6 @@ ul {
   font-style: normal;
 }
 
-.login-form input[type="text"],
-.login-form input[type="password"] {
-  font: inherit;
-  color: #000000;
-  text-transform: uppercase;
-
-  background-color: #f9f6f3;
-  border: 2px solid #000000;
-}
-
 .modal label {
   font-family: "Gilroy", Verdana, sans-serif;
   font-size: 18px;
@@ -291,8 +284,7 @@ ul {
   color: rgba(0, 0, 0, 0.1);
 }
 
-.container h2,
-.pagination-list a {
+.container h2 {
   font-family: "Gilroy", Verdana, sans-serif;
   font-size: 16px;
   line-height: 1.2;
@@ -304,7 +296,7 @@ ul {
 }
 
 .filters {
-  background-color: #eeeeee;
+  background-color: #efefef;
 }
 
 .filters h2 {
@@ -316,10 +308,10 @@ ul {
 }
 
 .filters legend,
-.catalog-item a {
+.catalog-item h3 {
   font-family: "Gilroy", Verdana, sans-serif;
   font-size: 18px;
-  line-height: 1,2;
+  line-height: 1.2;
   font-weight: 800;
   color: #000000;
   letter-spacing: 0.01em;
@@ -336,8 +328,7 @@ ul {
  color: #a6a6a6;
 }
 
-.sort,
-.pagination-list {
+.sort {
   background-color: #ebebeb;
 }
 
@@ -349,9 +340,32 @@ ul {
   color: rgba(0, 0, 0, 0.3);
 }
 
+.sort a[href]:hover,
+.sort a[href]:focus {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.sort a[href]:active {
+  color: rgba(0, 0, 0, 1);
+}
+
 .type-current a,
 .priority-current a {
   color: #000000;
+}
+
+.pagination-list {
+  background-color: #ebebeb;
+}
+
+.pagination-list a {
+  font-family: "Gilroy", Verdana, sans-serif;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 800;
+/*  color: #000000;*/
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
 }
 
 .off-current a {
@@ -359,29 +373,24 @@ ul {
 }
 
 .off-current a[href]:hover,
-.off-current a[href]:focus,
-.sort a[href]:hover,
-.sort a[href]:focus {
+.off-current a[href]:focus {
   color: rgba(0, 0, 0, 0.6);
 }
 
-.off-current a[href]:active,
-.sort a[href]:active,
-.sort a[href]:active {
+.off-current a[href]:active {
   color: rgba(0, 0, 0, 1);
 }
 
 .pagination-item:first-child a:hover,
-.pagination-item:last-child a:hover {
-  color: rgba(0, 0, 0, 1);
+.pagination-item:first-child a:focus,
+.pagination-item:last-child a:hover,
+.pagination-item:last-child a:focus {
   background-color: #d9d9d9;
 }
 
 .pagination-item:first-child a:active,
 .pagination-item:last-child a:active {
   color: rgba(0, 0, 0, 0.3);
-
-  background-color: #d9d9d9;
 }
 
 .catalog-item .compare-on {
