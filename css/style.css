@@ -38,7 +38,7 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 15px;
   line-height: 2;
   font-weight: 300;
@@ -108,7 +108,7 @@ a {
 }
 
 .site-navigation {
-  font-family: "Gilroy", Verdana, sans-serif;
+  font-family: "Gilroy", "Verdana", sans-serif;
   font-size: 18px;
   line-height: 1.2;
   font-weight: 800;
@@ -118,7 +118,7 @@ a {
 }
 
 .sub-navigation a {
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 15px;
   line-height: 36px;
   font-weight: 300;
@@ -142,7 +142,7 @@ a {
 
 .container h1,
 .container h3 {
-  font-family: "Gilroy", Verdana, sans-serif;
+  font-family: "Gilroy", "Verdana", sans-serif;
   font-size: 47px;
   line-height: 1.2;
   font-weight: 800;
@@ -152,7 +152,7 @@ a {
 }
 
 .promo-item tr:first-child {
-  font-family: "Gilroy", Verdana, sans-serif;
+  font-family: "Gilroy", "Verdana", sans-serif;
   font-size: 36px;
   line-height: 1.2;
   font-weight: 300;
@@ -166,7 +166,7 @@ a {
 }
 
 .button {
-  font-family: "Gilroy", Verdana, sans-serif;
+  font-family: "Gilroy", "Verdana", sans-serif;
   font-size: 18px;
   line-height: 1.2;
   font-weight: 800;
@@ -179,7 +179,7 @@ a {
 }
 
 .category {
-  font-family: "Gilroy", Verdana, sans-serif;
+  font-family: "Gilroy", "Verdana", sans-serif;
   font-size: 18px;
   line-height: 1.2;
   font-weight: 800;
@@ -213,7 +213,7 @@ a {
 }
 
 .about-item {
-  font-family: "Gilroy", Verdana, sans-serif;
+  font-family: "Gilroy", "Verdana", sans-serif;
   font-size: 16px;
   line-height: 40px;
   font-weight: 800;
@@ -255,7 +255,7 @@ a {
 }
 
 .modal label {
-  font-family: "Gilroy", Verdana, sans-serif;
+  font-family: "Gilroy", "Verdana", sans-serif;
   font-size: 18px;
   line-height: 18px;
   font-weight: 800;
@@ -264,7 +264,7 @@ a {
 
 .modal input,
 .modal textarea {
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   font-weight: normal;
@@ -311,7 +311,7 @@ a {
 }
 
 .container h2 {
-  font-family: "Gilroy", Verdana, sans-serif;
+  font-family: "Gilroy", "Verdana", sans-serif;
   font-size: 16px;
   line-height: 1.2;
   font-weight: 800;
@@ -335,7 +335,7 @@ a {
 
 .filters legend,
 .catalog-item h3 {
-  font-family: "Gilroy", Verdana, sans-serif;
+  font-family: "Gilroy", "Verdana", sans-serif;
   font-size: 18px;
   line-height: 1.2;
   font-weight: 800;
@@ -359,7 +359,7 @@ a {
 }
 
 .sort a {
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   font-weight: normal;
@@ -385,7 +385,7 @@ a {
 }
 
 .pagination-list a {
-  font-family: "Gilroy", Verdana, sans-serif;
+  font-family: "Gilroy", "Verdana", sans-serif;
   font-size: 16px;
   line-height: 1.2;
   font-weight: 800;
@@ -420,7 +420,7 @@ a {
 }
 
 .catalog-item .compare-on {
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 36px;
   font-weight: 300;
@@ -438,7 +438,7 @@ a {
 }
 
 .catalog-item span {
-  font-family: "Gilroy", Verdana, sans-serif;
+  font-family: "Gilroy", "Verdana", sans-serif;
   font-size: 16px;
   line-height: 1.2;
   font-weight: 300;
