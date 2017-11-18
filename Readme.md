@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Lina Vojhanskaya](https://up.htmlacademy.ru/htmlcss/19/user/419137).
-* Наставник: `Ольга Вадясова`.
+* Наставник: [Ольга Вадясова](https://htmlacademy.ru/profile/ad-ovo).
 
 ---
 
