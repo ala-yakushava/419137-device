@@ -9,9 +9,7 @@
   <body>
     <header class="main-header">
       <div class="main-header-logo">
-        <a class="main-logo">
-          <img src="img/logo-black.png" width="164" height="36" alt="Интернет-магазин «Device»">
-        </a>
+        <a class="main-logo"><img src="img/logo-black.png" width="164" height="36" alt="Интернет-магазин «Device»"></a>
       </div>
       <div class="header-navigation">
         <form method="get" action="https://echo.htmlacademy.ru">
@@ -21,39 +19,37 @@
           <button class="search-button" type="submit">Найти</button>
         </form>
         <ul class="user-navigation">
-          <li class="login"><a href="#">Войти</a></li>
-          <li class="compare"><a href="#">Сравнить</a></li>
-          <li class="cart"><a href="#">Корзина</a></li>
+          <li><a class="login" href="#">Войти</a></li>
+          <li><a class="compare" href="#">Сравнить</a><a class="cart" href="#">Корзина</a></li>
         </ul>
       </div>
-      <nav class="main-navigation">
-        <ul class="site-navigation">
-          <li>
-            <a href="catalog.html">Каталог товаров</a>
-            <div class="sub-navigation-box">
-              <ul class="sub-navigation">
-                <li><a href="#">Виртуальная реальность</a></li>
-                <li><a href="#">Моноподы для селфи</a></li>
-                <li><a href="#">Экшн-камеры</a></li>
-              </ul>
-              <ul class="sub-navigation">
-                <li><a href="#">Фитнесс-браслеты</a></li>
-                <li><a href="#">Умные часы</a></li>
-              </ul>
-              <ul class="sub-navigation">
-                <li><a href="#">Квадрокоптеры</a></li>
-              </ul>
-            </div>
-          </li>
-          <li><a href="#">Доставка</a></li>
-          <li><a href="#">Гарантия</a></li>
+      <nav class="site-navigation">
+        <div>
+          <a href="catalog.html">Каталог товаров</a>
+        </div>
+        <ul class="site-navigation-header">
+          <li><a href="#">Доставка</a><a href="#">Гарантия</a></li>
           <li><a href="#">Контакты</a></li>
         </ul>
+        <div class="sub-navigation-box">
+          <ul class="sub-navigation">
+            <li><a href="#">Виртуальная реальность</a></li>
+            <li><a href="#">Моноподы для селфи</a></li>
+            <li><a href="#">Экшн-камеры</a></li>
+          </ul>
+          <ul class="sub-navigation">
+            <li><a href="#">Фитнесс-браслеты</a></li>
+            <li><a href="#">Умные часы</a></li>
+          </ul>
+          <ul class="sub-navigation">
+            <li><a href="#">Квадрокоптеры</a></li>
+          </ul>
+        </div>
       </nav>
     </header>
     <main class="container">
       <h1 class="visually-hidden">Интернет-магазин «Device»</h1>
-      <section class="promo box-center">
+      <section class="promo">
         <h2 class="visually-hidden">Анонс новых товаров</h2>
         <div class="slider">
           <input type="radio" id="btn-1" name="toggle" checked>
@@ -131,7 +127,7 @@
           </li>
         </ul>
       </section>
-      <section class="category box-center">
+      <section class="category">
         <h2 class="visually-hidden">Список категорий товаров</h2>
         <ul class="category-list">
           <li class="category-item"><a href="catalog.html"><span>Виртуальная<br>реальность</span></a></li>
@@ -142,7 +138,7 @@
           <li class="category-item"><a href="catalog.html"><span>Квадрокоптеры</span></a></li>
         </ul>
       </section>
-      <section class="service box-center">
+      <section class="service">
         <!-- <h2 class="visually-hidden">Список дополнительных услуг</h2> -->
         <ul class="service-list">
           <li><a class="button service-current" href="#tab-1">Доставка</a></li>
@@ -165,7 +161,7 @@
           </li>
         </ul>
       </section>
-      <section class="brand box-center">
+      <section class="brand">
         <h2 class="visually-hidden">Список популярных производителей</h2>
         <ul class="brand-list">
           <li class="brand-item"><a href="#"><img src="img/logo-1.png" width="260" height="100" alt="DJI"></a></li>
@@ -174,7 +170,7 @@
           <li class="brand-item"><a href="#"><img src="img/logo-4.png" width="260" height="100" alt="VIVE"></a></li>
         </ul>
       </section>
-      <section class="company box-center">
+      <section class="company">
         <!-- <h2 class="visually-hidden">Информация об интернет-магазине «Device»</h2> -->
         <section class="about-company">
           <h3>О нас</h3>
@@ -198,37 +194,37 @@
       </section>
     </main>
     <footer class="main-footer">
-      <div class="main-footer-logo">
-        <a class="main-logo">
-         <img src="img/logo-yellow.png" width="163" height="36" alt="Интернет-магазин «Device»">
-        </a>
-      </div>
-      <div class="footer-navigation">
+      <div>
+        <div class="main-footer-logo">
+          <a class="main-logo"><img src="img/logo-yellow.png" width="163" height="36" alt="Интернет-магазин «Device»"></a>
+        </div>
         <ul class="user-navigation-footer">
           <li class="login"><a href="#">Войти</a></li>
           <li class="compare"><a href="#">Сравнить</a></li>
           <li class="cart"><a href="#">Корзина</a></li>
         </ul>
-        <ul class="site-navigation">
+      </div>
+      <div>
+        <address class="contact-address">г.Москва, ул. Строителей, 15</address>
+        <ul class="site-navigation site-navigation-footer">
           <li><a href="#">Доставка</a></li>
           <li><a href="#">Гарантия</a></li>
           <li><a href="#">Контакты</a></li>
         </ul>
+        <div>
+          <a class="contact-telephon" href="tel:+74954959595">Тел: +7(495)495-95-95</a>
+        </div>
       </div>
-      <div class="contact">
-        <address class="contact-address">г.Москва, ул. Строителей, 15</address>
-        <a class="contact-telephon" href="tel:+74954959595">Тел: +7(495)495-95-95</a>
+      <div>
+        <ul class="social">
+          <li><a class="social-button" href="#">Вконтакте</a></li>
+          <li><a class="social-button" href="#">Фейсбук</a></li>
+          <li><a class="social-button" href="#">Инстаграм</a></li>
+        </ul>
+        <div class="copyright">
+          <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-html.svg" width="27" height="35" alt="HTML Academy"></a>
+        </div>
       </div>
-      <ul class="social">
-        <li><a class="social-button" href="#">Вконтакте</a></li>
-        <li><a class="social-button" href="#">Фейсбук</a></li>
-        <li><a class="social-button" href="#">Инстаграм</a></li>
-      </ul>
-      <p class="copyright">
-        <a href="https://htmlacademy.ru/intensive/htmlcss">
-          <img src="img/logo-html.svg" width="27" height="35" alt="HTML Academy">
-        </a>
-      </p>
     </footer>
     <section class="modal modal-feedback">
       <h2 class="visually-hidden">Обратная связь</h2>
