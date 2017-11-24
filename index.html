@@ -47,9 +47,9 @@
         </div>
       </nav>
     </header>
-    <main class="container main-page">
+    <main class="container">
       <h1 class="visually-hidden">Интернет-магазин «Device»</h1>
-      <section class="promo">
+      <section class="promo section-box">
         <h2 class="visually-hidden">Анонс новых товаров</h2>
         <div class="slider">
           <input type="radio" id="btn-1" name="toggle" checked>
@@ -57,9 +57,9 @@
           <input type="radio" id="btn-3" name="toggle">
         </div>
         <div class="slider-controls">
-          <label for="btn-1">Первый слайд</label>
-          <label for="btn-2">Второй слайд</label>
-          <label for="btn-3">Третий слайд</label>
+          <label for="btn-1"><span class="visually-hidden">Первый слайд</span></label>
+          <label for="btn-2"><span class="visually-hidden">Второй слайд</span></label>
+          <label for="btn-3"><span class="visually-hidden">Третий слайд</span></label>
         </div>
         <ul class="promo-list">
           <li class="promo-item">
@@ -85,7 +85,7 @@
               <img src="img/slider-1.png" width="384" height="486" alt="Самая длинная палка для селфи">
             </div>
           </li>
-          <li class="promo-item">
+          <li class="promo-item visually-hidden">
             <div class="promo-description">
               <h3>Худеем<br>правильно!</h3>
               <p>Мотивирующие фитнес-браслеты помогут найти в себе силы
@@ -104,7 +104,7 @@
               <img src="img/slider-2.png" width="345" height="485" alt="Мотивирующий фитнес-браслет">
             </div>
           </li>
-          <li class="promo-item">
+          <li class="promo-item visually-hidden">
             <div class="promo-description">
               <h3>Порхает как бабочка,<br>жалит как пчела!</h3>
               <p>Этот обычный, на первый взгляд, квадрокоптер оснащен
@@ -127,7 +127,7 @@
           </li>
         </ul>
       </section>
-      <section class="category">
+      <section class="category section-box">
         <h2 class="visually-hidden">Список категорий товаров</h2>
         <ul class="category-list">
           <li class="category-item"><a href="catalog.html"><span>Виртуальная<br>реальность</span></a></li>
@@ -138,30 +138,32 @@
           <li class="category-item"><a href="catalog.html"><span>Квадрокоптеры</span></a></li>
         </ul>
       </section>
-      <section class="service">
-        <!-- <h2 class="visually-hidden">Список дополнительных услуг</h2> -->
-        <ul class="service-list">
-          <li><a class="button service-current" href="#tab-1">Доставка</a></li>
-          <li><a class="button" href="#tab-2">Гарантия</a></li>
-          <li><a class="button" href="#tab-3">Кредит</a></li>
-        </ul>
-        <ul class="descript-list">
-          <li class="descript-item descript-item-current" id="tab-1">
-            <h3>Доставка</h3>
-            <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-          </li>
-          <li class="descript-item" id="tab-2">
-            <h3>Гарантия</h3>
-            <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый<br>Товар, не дом, конечно же.</p>
-          </li>
-          <li class="descript-item" id="tab-3">
-            <h3>Кредит</h3>
-            <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные
-            условия кредита. Выгодные для нашего банка, разумеется.</p>
-          </li>
-        </ul>
-      </section>
-      <section class="brand">
+      <div class="service-box">
+        <section class="service">
+          <h2 class="visually-hidden">Список дополнительных услуг</h2>
+          <ul class="service-list">
+            <li><a class="button service-current" href="#tab-1">Доставка</a></li>
+            <li><a class="button" href="#tab-2">Гарантия</a></li>
+            <li><a class="button" href="#tab-3">Кредит</a></li>
+          </ul>
+          <ul class="descript-list">
+            <li class="descript-item descript-item-current" id="tab-1">
+              <h3>Доставка</h3>
+              <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+            </li>
+            <li class="descript-item visually-hidden" id="tab-2">
+              <h3>Гарантия</h3>
+              <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый<br>Товар, не дом, конечно же.</p>
+            </li>
+            <li class="descript-item visually-hidden" id="tab-3">
+              <h3>Кредит</h3>
+              <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные
+              условия кредита. Выгодные для нашего банка, разумеется.</p>
+            </li>
+          </ul>
+        </section>
+      </div>
+      <section class="brand section-box">
         <h2 class="visually-hidden">Список популярных производителей</h2>
         <ul class="brand-list">
           <li class="brand-item"><a href="#"><img src="img/logo-1.png" width="260" height="100" alt="DJI"></a></li>
@@ -170,8 +172,8 @@
           <li class="brand-item"><a href="#"><img src="img/logo-4.png" width="260" height="100" alt="VIVE"></a></li>
         </ul>
       </section>
-      <section class="company">
-        <!-- <h2 class="visually-hidden">Информация об интернет-магазине «Device»</h2> -->
+      <section class="company section-box">
+        <h2 class="visually-hidden">Информация об интернет-магазине «Device»</h2>
         <section class="about-company">
           <h3>О нас</h3>
           <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
@@ -217,9 +219,9 @@
       </div>
       <div>
         <ul class="social">
-          <li><a class="social-button" href="#">Вконтакте</a></li>
-          <li><a class="social-button" href="#">Фейсбук</a></li>
-          <li><a class="social-button" href="#">Инстаграм</a></li>
+          <li><a class="social-vk" href="#"><span class="visually-hidden">Вконтакте</span></a></li>
+          <li><a class="social-fb" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
+          <li><a class="social-instagram" href="#"><span class="visually-hidden">Инстаграм</span></a></li>
         </ul>
         <div class="copyright">
           <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-html.svg" width="27" height="35" alt="HTML Academy"></a>
