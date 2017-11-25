@@ -486,8 +486,8 @@ input[type="radio"].visually-hidden {
 
 .main-footer .middle-row {
   align-items: flex-end;
-  padding-top: 27px;
-  padding-bottom: 58px;
+  padding-top: 20px;
+  padding-bottom: 60px;
 }
 
 .main-footer .bottom-row::before {
@@ -497,7 +497,7 @@ input[type="radio"].visually-hidden {
   height: 16px;
 
   background-color: transparent;
-  border-bottom: 8px solid #ffc600;
+  border-bottom: 7px solid #ffc600;
 }
 
 .user-navigation-footer {
@@ -526,7 +526,7 @@ input[type="radio"].visually-hidden {
 
 .main-footer .site-navigation-footer {
   display: flex;
-  padding-right: 40px;
+  padding-right: 38px;
 }
 
 .site-navigation-footer a {
@@ -535,7 +535,7 @@ input[type="radio"].visually-hidden {
 
 .main-footer .social {
   display: flex;
-  padding-right: 50px;
+  padding-right: 52px;
 }
 
 .social a {
@@ -655,7 +655,8 @@ input[type="radio"].visually-hidden {
 
 .filter-box {
   display: flex;
-  width: 100%;
+  width: 1160px;
+  margin: 0 auto;
 }
 
 .filter-box h2 {
@@ -673,7 +674,7 @@ input[type="radio"].visually-hidden {
 }
 
 .filters {
-  width: 32.36%;
+  width: 327px;
   min-height: 1290px;
 
   background-color: #efefef;
@@ -689,17 +690,13 @@ input[type="radio"].visually-hidden {
 }
 
 .filters h2 {
-  width: 300px;
-  margin-left: auto;
+  margin-left: 60px;
 }
 
 .filters form {
   min-height: 620px;
-  width: 266px;
-  margin: 0;
-  margin-left: auto;
   padding-top: 69px;
-  padding-right: 50px;
+  margin: 0 50px;
 }
 
 .filters fieldset {
@@ -731,7 +728,7 @@ input[type="radio"].visually-hidden {
 }
 
 .sort-box {
-  width: 67.64%;
+  width: 834px;
   min-height: 1290px;
 }
 
@@ -788,7 +785,7 @@ input[type="radio"].visually-hidden {
 .catalog {
   width: 760px;
   min-height: 960px;
-  padding: 70px 20px 77px 74px;
+  padding: 70px 0 77px 75px;
 }
 
 .catalog-list {
