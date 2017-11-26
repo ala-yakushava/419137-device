@@ -88,40 +88,118 @@ input[type="radio"].visually-hidden {
 .main-header {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 
   width: 1040px;
-  height: 226px;
   margin: 0 auto;
-  padding: 0 60px;
+  padding: 0 60px 51px;
 
-  background-color: #f7e296;
+  background: linear-gradient(to bottom, #ffffff 40px, #f7e296 40px);
+}
+
+.main-header-logo {
+  margin-top: 23px;
+  margin-bottom: 10px;
 }
 
 .header-navigation {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
+
+  margin-bottom: 30px;
+}
+
+.header-navigation form {
+  display: flex;
+  justify-content: space-between;
+
+  width: 440px;
+}
+
+.search {
+  width: 100%;
+  height: 45px;
+  padding-left: 40px;
+
+  font: inherit;
+  line-height: 36px;
+  color: #000000;
+  opacity: 0.3;
+
+  background-color: #f7e296;
+  border: none;
+}
+
+.search:hover {
+  opacity: 0.6;
+}
+
+.search:focus {
+  opacity: 1;
+  outline: none;
+  border-bottom: 2px solid #000000;
+}
+
+.search-button {
+  position: relative;
+  z-index: -1;
+
+  width: 80px;
+  height: 45px;
+
+  font: inherit;
+  line-height: 36px;
+  color: #000000;
+
+  background-color: #f7e296;
+  border: 2px solid #000000;
+}
+
+.search:focus + .search-button {
+  z-index: 1;
+}
+
+.search-button:hover,
+.search-button:focus {
+  z-index: 1;
+
+  color: #ffffff;
+
+  background-color: #000000;
+  outline: none;
+}
+
+.search-button:active {
+  z-index: 1;
+
+  color: #747474;
 }
 
 .user-navigation {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
 
-  min-width: 500px;
+  width: 500px;
 
   font: inherit;
   line-height: 36px;
 }
 
-.user-navigation li a:last-child {
-  padding-left: 40px;
+.user-navigation a {
+  padding-left: 25px;
+}
+
+.user-navigation .login-off {
+  padding-left: 20px;
+}
+
+.user-navigation .compare {
+  margin-right: 40px;
 }
 
 .site-navigation {
+  position: relative;
+
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
 
@@ -136,65 +214,53 @@ input[type="radio"].visually-hidden {
 
 .site-navigation-header {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
 
-  min-width: 500px;
+  width: 500px;
+}
+
+.hidden {
+  padding-right: 35px;
 }
 
 .site-navigation-header li:first-child a {
-  padding-right: 40px;
+  padding-right: 35px;
 }
 
 .sub-navigation-box {
+  position: absolute;
+  top: 20px;
+  left: -60px;
+  z-index: -1;
+
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
 
-  min-width: 600px;
-  padding: 35px 47px 43px 0px;
-}
-
-.main-header input[type="search"] {
-  font: inherit;
-  line-height: 36px;
-  color: #000000;
-  opacity: 0.3;
+  width: 1040px;
+  padding: 30px 60px;
 
   background-color: #f7e296;
-  border: none;
+
 }
 
-.main-header input[type="search"]:hover {
-  opacity: 0.6;
+.hidden:hover ~ .sub-navigation-box,
+.hidden:active ~ .sub-navigation-box,
+.sub-navigation-box:hover {
+  z-index: 1;
 }
 
-.main-header input[type="search"]:focus {
-  opacity: 1;
+.sub-navigation-one {
+  width: 240px;
 }
 
-.search-button {
-  font: inherit;
-  line-height: 36px;
-  color: #000000;
-
-  background-color: #f7e296;
-  border: 2px solid #000000;
+.sub-navigation-two {
+  width: 200px;
 }
 
-.search-button:hover,
-.search-button:focus {
-  color: #ffffff;
-  outline: none;
-
-  background-color: #000000;
+.sub-navigation-three {
+  width: 160px;
 }
 
-.search-button:active {
-  color: #747474;
-}
-
-.sub-navigation a {
+.sub-navigation-box a {
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 15px;
   line-height: 36px;
@@ -343,6 +409,7 @@ input[type="radio"].visually-hidden {
 
   background-color: #f0c52e;
   background: linear-gradient(to bottom, transparent 15px, #f0c52e 15px, #f0c52e 24px, transparent 24px);
+  border: none;
 }
 
 .promo .button {
@@ -362,8 +429,6 @@ input[type="radio"].visually-hidden {
   position: absolute;
   right: 80px;
   bottom: 120px;
-
-  outline: 2px solid blue;
 }
 
 .category {
@@ -694,7 +759,7 @@ input[type="radio"].visually-hidden {
   opacity: 0.6;
 }
 
-.social a:focus::before {
+.social a:active::before {
   opacity: 0.1;
 }
 
@@ -741,8 +806,9 @@ input[type="radio"].visually-hidden {
   width: 1040px;
   min-height: 85px;
   margin: 0 auto;
-  margin-bottom: 50px;
-  padding: 0 60px;
+  padding: 40px 60px;
+
+  background-color: #ffffff;
 }
 
 .container h1 {

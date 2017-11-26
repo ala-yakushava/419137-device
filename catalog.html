@@ -13,9 +13,8 @@
       </div>
       <div class="header-navigation">
         <form method="get" action="https://echo.htmlacademy.ru">
-          <label>Поиск
-            <input class="search" type="search" name="search" placeholder="Поиск по сайту">
-          </label>
+          <label class="visually-hidden" for="search">Поиск</label>
+          <input class="search" id="search" type="search" name="search" placeholder="Поиск по сайту">
           <button class="search-button" type="submit">Найти</button>
         </form>
         <ul class="user-navigation">
@@ -24,7 +23,7 @@
         </ul>
       </div>
       <nav class="site-navigation">
-        <div>
+        <div class="hidden">
           <a href="catalog.html">Каталог товаров</a>
         </div>
         <ul class="site-navigation-header">
@@ -32,16 +31,16 @@
           <li><a href="#">Контакты</a></li>
         </ul>
         <div class="sub-navigation-box">
-          <ul class="sub-navigation">
+          <ul class="sub-navigation-one">
             <li><a href="#">Виртуальная реальность</a></li>
             <li><a href="#">Моноподы для селфи</a></li>
             <li><a href="#">Экшн-камеры</a></li>
           </ul>
-          <ul class="sub-navigation">
+          <ul class="sub-navigation-two">
             <li><a href="#">Фитнесс-браслеты</a></li>
             <li><a href="#">Умные часы</a></li>
           </ul>
-          <ul class="sub-navigation">
+          <ul class="sub-navigation-three">
             <li><a href="#">Квадрокоптеры</a></li>
           </ul>
         </div>
@@ -175,7 +174,7 @@
         </div>
       </div>
     </main>
-        <footer class="main-footer">
+    <footer class="main-footer">
       <div class="top-row">
         <div class="main-footer-logo">
           <a class="main-logo" href="index.html"><img src="img/logo-yellow.png" width="163" height="36" alt="Интернет-магазин «Device»"></a>
