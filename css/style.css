@@ -1395,11 +1395,11 @@ input[type="radio"].visually-hidden {
   right: 25px;
 
   width: 55px;
-  height: 54px;
+  height: 55px;
 
   font-family: "Gilroy", "Verdana", sans-serif;
   font-size: 14px;
-  line-height: 60px;
+  line-height: 52px;
   font-weight: 800;
   color: #bfbfbf;
   text-transform: uppercase;
@@ -1509,7 +1509,8 @@ input[type="radio"].visually-hidden {
 .pagination-item a {
   display: inline-block;
 
-  padding: 26px 30px;
+  padding: 26px;
+  padding-left: 30px;
 }
 
 .pagination-item a:hover,
@@ -1522,11 +1523,11 @@ input[type="radio"].visually-hidden {
 }
 
 .pagination-number a {
-  padding-right: 25px;
+  padding-left: 28px;
 }
 
 .pagination-number a:last-child {
-  padding-right: 0;
+  padding-right: 10px;
 }
 
 .pagination-number a[href] {
