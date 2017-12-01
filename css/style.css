@@ -1134,7 +1134,7 @@ input[type="radio"].visually-hidden {
   top: 0;
   right: 1160px;
 
-  width: 100%;
+  width: calc((100vw - 1160px) / 2);
   height: 100%;
 
   background: linear-gradient(to bottom, #ffffff 181px, #dbdbdb 181px, #dbdbdb 249px, #efefef 249px);
@@ -1147,7 +1147,7 @@ input[type="radio"].visually-hidden {
   top: 0;
   left: 1160px;
 
-  width: 100%;
+  width: calc((100vw - 1160px) / 2 - 17px);
   height: 100%;
 
   background: linear-gradient(to bottom, #ffffff 181px, #ebebeb 181px, #ebebeb 249px, #ffffff 249px);
