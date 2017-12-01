@@ -1102,28 +1102,26 @@ input[type="radio"].visually-hidden {
   content: "";
 
   position: absolute;
-  top: 180px;
+  top: 0;
   right: 1160px;
-  z-index: -1;
 
   width: 100%;
   height: 100%;
 
-  background: linear-gradient(to bottom, #dbdbdb 70px, #efefef 70px);
+  background: linear-gradient(to bottom, #ffffff 180px, #dbdbdb 180px, #dbdbdb 251px, #efefef 251px);
 }
 
 .inner-page::after {
   content: "";
 
   position: absolute;
-  top: 180px;
+  top: 0;
   left: 1160px;
-  z-index: -1;
 
   width: 100%;
   height: 100%;
 
-  background: linear-gradient(to bottom, #ebebeb 70px, #ffffff 70px);
+  background: linear-gradient(to bottom, #ffffff 180px, #ebebeb 180px, #ebebeb 251px, #ffffff 251px);
 }
 
 .header-box {
@@ -1136,7 +1134,7 @@ input[type="radio"].visually-hidden {
 
 .inner-page h1 {
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 26px;
   padding: 0;
 }
 
@@ -1179,8 +1177,8 @@ input[type="radio"].visually-hidden {
 }
 
 .filters {
-  width: 266px;
-  padding-left: 60px;
+  width: 200px;
+  padding: 0 66px 0 60px;
 
   background: linear-gradient(to bottom, #dbdbdb 70px, #efefef 70px);
 }
@@ -1200,17 +1198,34 @@ input[type="radio"].visually-hidden {
 }
 
 .filters form {
-  padding-top: 69px;
-  margin: -10px;
+  margin-top: 94px;
 }
 
 .filters fieldset {
-  border: ;
+  position: relative;
+
+  margin: 0;
+  margin-bottom: 45px;
+  padding: 0;
+
+  border: none;
+}
+
+.filters fieldset:before {
+  content: "";
+
+  position: absolute;
+  top: -15px;
+  left: 0;
+
+  width: 100%;
+  height: 2px;
+
+  background-color: #000000;
 }
 
 .filters legend {
-  margin: 0;
-  padding: 0;
+  margin-bottom: 20px;
 
   font-family: "Gilroy", "Verdana", sans-serif;
   font-size: 18px;
@@ -1227,8 +1242,12 @@ input[type="radio"].visually-hidden {
   color: #000000;
 }
 
-.filters input:disabled+label {
+.filters input:disabled + label {
  color: #a6a6a6;
+}
+
+.filters .button {
+  width: 100%;
 }
 
 .sort {
