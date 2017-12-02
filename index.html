@@ -50,15 +50,13 @@
       <h1 class="visually-hidden">Интернет-магазин «Device»</h1>
       <section class="promo">
         <h2 class="visually-hidden">Анонс новых товаров</h2>
-        <div class="slider">
-          <input type="radio" id="btn-1" name="toggle" checked>
-          <input type="radio" id="btn-2" name="toggle">
-          <input type="radio" id="btn-3" name="toggle">
-        </div>
+        <input class="visually-hidden" type="radio" id="btn-1" name="toggle" checked>
+        <input class="visually-hidden" type="radio" id="btn-2" name="toggle">
+        <input class="visually-hidden" type="radio" id="btn-3" name="toggle">
         <div class="slider-controls">
-          <label for="btn-1"><span class="visually-hidden">Первый слайд</span></label>
-          <label for="btn-2"><span class="visually-hidden">Второй слайд</span></label>
-          <label for="btn-3"><span class="visually-hidden">Третий слайд</span></label>
+          <label class="controls-1" for="btn-1">Первый слайд</label>
+          <label class="controls-2" for="btn-2">Второй слайд</label>
+          <label class="controls-3" for="btn-3">Третий слайд</label>
         </div>
         <ul class="promo-list">
           <li class="promo-item promo-one">
@@ -246,9 +244,9 @@
     </section>
     <section class="modal modal-map">
       <h2 class="visually-hidden">Офис компании на карте</h2>
-      <p>
+      <div>
         <img src="img/map-big.png" width="950" height="559" alt="Офис компании по адресу ул. Строителей, 15, Москва">
-      </p>
+      </div>
       <button class="modal-close" type="button">Закрыть</button>
     </section>
   </body>
