@@ -62,9 +62,11 @@
           <form class="filter" method="get" action="https://echo.htmlacademy.ru">
             <fieldset>
               <legend>Стоимость</legend>
-              <span class="range-slider visually-hidden">Уменьшить</span>
-              <input class="filter-range" type="range" name="price" min="0" max="10000" step="1000">
-              <span class="range-slider visually-hidden">Увеличить</span>
+              <div class="range-controls">
+                <div class="bar"></div>
+                <div class="toggle toggle-min"></div>
+                <div class="toggle toggle-max"></div>
+              </div>
             </fieldset>
             <fieldset>
               <legend>Цвет</legend>
