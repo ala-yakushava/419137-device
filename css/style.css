@@ -382,7 +382,7 @@ input[type="radio"].visually-hidden {
 
   width: 1160px;
   margin: 0 auto;
-  margin-bottom: 101px;
+  margin-bottom: 98px;
 
   background: linear-gradient(to bottom, #f7e296 114px, #ffffff 114px);
 }
@@ -407,6 +407,11 @@ input[type="radio"].visually-hidden {
   background-color: inherit;
   border: 1px solid #000000;
   border-radius: 50%;
+}
+
+.slider-controls label:hover,
+.slider-controls label:focus {
+  cursor: pointer;
 }
 
 #btn-1:checked ~ .slider-controls .controls-1::before,
@@ -607,7 +612,7 @@ input[type="radio"].visually-hidden {
   background: #f7e296 url("../img/popular-1.svg") no-repeat center center;
 }
 
-.category-item a[href="2.html"]::before {
+.category-item a[href="catalog.html"]::before {
   background: #f7e296 url("../img/popular-2.svg") no-repeat center  40px;
 }
 
@@ -640,7 +645,7 @@ input[type="radio"].visually-hidden {
   background: #f0c52e url("../img/popular-gr-1.svg") no-repeat center center;
 }
 
-.category-item a[href="2.html"]:active::before {
+.category-item a[href="catalog.html"]:active::before {
   background: #f0c52e url("../img/popular-gr-2.svg") no-repeat center 40px;
 }
 
@@ -739,7 +744,7 @@ input[type="radio"].visually-hidden {
 }
 
 .descript-one::after {
-  top: 71px;
+  top: 68px;
   right: -234px;
 
   background-image: url("../img/delivery.svg");
@@ -1265,7 +1270,7 @@ input[type="radio"].visually-hidden {
   width: calc((100vw - 1160px) / 2);
   height: 100%;
 
-  background: linear-gradient(to bottom, #ffffff 181px, #dbdbdb 181px, #dbdbdb 249px, #efefef 249px);
+  background: linear-gradient(to bottom, #ffffff 180px, #dbdbdb 180px, #dbdbdb 248px, #efefef 248px);
 }
 
 .inner-page::after {
@@ -1278,7 +1283,7 @@ input[type="radio"].visually-hidden {
   width: calc((100vw - 1160px) / 2 - 17px);
   height: 100%;
 
-  background: linear-gradient(to bottom, #ffffff 181px, #ebebeb 181px, #ebebeb 249px, #ffffff 249px);
+  background: linear-gradient(to bottom, #ffffff 180px, #ebebeb 180px, #ebebeb 248px, #ffffff 248px);
 }
 
 .header-box {
@@ -1699,7 +1704,7 @@ input[type="radio"].visually-hidden {
 
 .catalog-item p {
   position: absolute;
-  top: 170px;
+  top: 157px;
   left: 78px;
   z-index: -1;
 
@@ -1717,6 +1722,7 @@ input[type="radio"].visually-hidden {
 
 .catalog-item .button {
   width: 200px;
+  margin-bottom: 4px;
 }
 
 .catalog-item .compare-on {
