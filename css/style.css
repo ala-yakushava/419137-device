@@ -1167,8 +1167,16 @@ input[type="radio"].visually-hidden {
   list-style: none;
 }
 
-.main-footer div:nth-child(3)::before {
+.main-footer > div:nth-child(3) {
+  position: relative;
+}
+
+.main-footer > div:nth-child(3)::before {
   content: "";
+
+  position: absolute;
+  top: 0;
+  left: 0;
 
   width: 80px;
   height: 7px;
