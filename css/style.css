@@ -115,6 +115,7 @@ input[type="radio"].visually-hidden {
   display: flex;
 
   width: 440px;
+  height: 45px;
 }
 
 .main-header form::before {
@@ -132,7 +133,7 @@ input[type="radio"].visually-hidden {
 
 .search {
   width: 100%;
-  height: 45px;
+  min-height: 43px;
   padding: 0;
   padding-left: 40px;
 
@@ -160,7 +161,7 @@ input[type="radio"].visually-hidden {
   z-index: -1;
 
   width: 80px;
-  height: 45px;
+  min-height: 43px;
 
   font: inherit;
   line-height: 36px;
@@ -678,7 +679,7 @@ input[type="radio"].visually-hidden {
 
   width: 1160px;
   margin: 0 auto;
-  padding: 0 20px 110px;
+  padding: 0 20px 50px;
 }
 
 .service .service-list {
@@ -1273,26 +1274,27 @@ input[type="radio"].visually-hidden {
   content: "";
 
   position: absolute;
-  top: 0;
+  top: 181px;
   right: 1160px;
+  z-index: -1;
 
   width: calc((100vw - 1160px) / 2);
   height: 100%;
 
-  background: linear-gradient(to bottom, #ffffff 180px, #dbdbdb 180px, #dbdbdb 248px, #efefef 248px);
+  background: linear-gradient(to bottom, #dbdbdb 0px, #dbdbdb 68px, #efefef 68px);
 }
 
 .inner-page::after {
   content: "";
 
   position: absolute;
-  top: 0;
+  top: 181px;
   left: 1160px;
 
   width: calc((100vw - 1177px) / 2);
-  height: 100%;
+  height: 68px;
 
-  background: linear-gradient(to bottom, #ffffff 180px, #ebebeb 180px, #ebebeb 248px, #ffffff 248px);
+  background: linear-gradient(to bottom, #ebebeb 0px, #ebebeb 68px, #ffffff 68px);
 }
 
 .header-box {
@@ -1374,7 +1376,7 @@ input[type="radio"].visually-hidden {
 
 .filters fieldset {
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 41px;
   padding: 0;
 
   border: none;
@@ -1545,6 +1547,7 @@ input[type="radio"].visually-hidden {
 
 .filters .button {
   width: 100%;
+  margin-top: -6px;
 }
 
 .sort {
@@ -1759,7 +1762,7 @@ input[type="radio"].visually-hidden {
 
   width: 760px;
   margin: 0;
-  margin-bottom: 77px;
+  margin-bottom: 75px;
   padding: 0;
 
   background-color: #ebebeb;
