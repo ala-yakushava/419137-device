@@ -288,7 +288,7 @@ input[type="radio"].visually-hidden {
 }
 
 .hidden:hover .sub-navigation-box {
-  z-index: 1;
+  z-index: 2;
 }
 
 .sub-navigation-box {
@@ -300,7 +300,7 @@ input[type="radio"].visually-hidden {
   display: flex;
 
   width: 1040px;
-  padding: 25px 60px 30px;
+  padding: 25px 60px 33px;
 
   background-color: #f7e296;
 }
@@ -510,6 +510,9 @@ input[type="radio"].visually-hidden {
 }
 
 .promo-item h3 {
+  position: relative;
+  z-index: 1;
+
   margin: 20px 0;
 }
 
@@ -954,7 +957,7 @@ input[type="radio"].visually-hidden {
   display: none;
 
   width: 760px;
-  padding: 77px 100px;
+  padding: 79px 100px;
   margin-top: -280px;
   margin-left: -380px;
 
@@ -984,7 +987,7 @@ input[type="radio"].visually-hidden {
 .modal textarea {
   box-sizing: border-box;
   margin: 10px 0;
-  padding: 18px 20px;
+  padding: 14px 20px;
 
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 14px;
@@ -1031,8 +1034,8 @@ input[type="radio"].visually-hidden {
 
 .modal-close {
   position: absolute;
-  top: 24px;
-  right: 24px;
+  top: 20px;
+  right: 20px;
 
   width: 55px;
   height: 55px;
