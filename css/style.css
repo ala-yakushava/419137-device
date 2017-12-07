@@ -792,13 +792,22 @@ input[type="radio"].visually-hidden {
 }
 
 .brand {
-  margin-bottom: 93px;
+  margin-bottom: 53px;
 }
 
 .brand-list {
   display: flex;
 
-  overflow: hidden;
+  flex-wrap: wrap;
+}
+
+.brand-list li {
+  margin-right: 40px;
+  margin-bottom: 40px;
+}
+
+.brand-list li:nth-child(4n) {
+  margin-right: 0;
 }
 
 .brand-item a {
@@ -808,11 +817,6 @@ input[type="radio"].visually-hidden {
 
   width: 260px;
   height: 100px;
-  margin-right: 40px;
-}
-
-.brand-item:last-child {
-  margin-right: 0;
 }
 
 .brand-item a::before {
