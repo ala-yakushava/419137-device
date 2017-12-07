@@ -330,13 +330,16 @@ input[type="radio"].visually-hidden {
 .site-navigation-header {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
 
   width: 500px;
 }
 
-.site-navigation-header li:first-child a {
-  margin-right: 35px;
+.site-navigation-header li:nth-child(3n-1) {
+  margin-left: 35px;
+}
+
+.site-navigation-header li:nth-child(3n) {
+  margin-left: auto;
 }
 
 .main-header a[href]:hover,
