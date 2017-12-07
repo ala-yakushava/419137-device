@@ -1350,43 +1350,6 @@ input[type="radio"].visually-hidden {
   opacity: 0.1;
 }
 
-.inner-page {
-  position: relative;
-
-  display: flex;
-  flex-wrap: wrap;
-
-  width: 1160px;
-  margin: 0 auto;
-}
-
-.inner-page::before {
-  content: "";
-
-  position: absolute;
-  top: 181px;
-  right: 1160px;
-  z-index: -1;
-
-  width: calc((100vw - 1160px) / 2);
-  height: 100%;
-
-  background: linear-gradient(to bottom, #dbdbdb 0px, #dbdbdb 68px, #efefef 68px);
-}
-
-.inner-page::after {
-  content: "";
-
-  position: absolute;
-  top: 181px;
-  left: 1160px;
-
-  width: calc((100vw - 1177px) / 2);
-  height: 68px;
-
-  background: linear-gradient(to bottom, #ebebeb 0px, #ebebeb 68px, #ffffff 68px);
-}
-
 .header-box {
   width: 1040px;
   margin: 0 auto;
@@ -1395,7 +1358,7 @@ input[type="radio"].visually-hidden {
   background-color: #ffffff;
 }
 
-.inner-page h1 {
+.header-box h1 {
   margin: 0;
   margin-bottom: 16px;
   padding: 0;
@@ -1439,14 +1402,42 @@ input[type="radio"].visually-hidden {
   color: rgba(0, 0, 0, 0.1);
 }
 
-.filters {
-  width: 200px;
-  padding: 0 66px 0 60px;
+.catalog-box {
+  position: relative;
 
-  background: linear-gradient(to bottom, #dbdbdb 68px, #efefef 68px);
+  display: flex;
+
+  width: 1160px;
+  margin: 0 auto;
 }
 
-.inner-page h2 {
+.catalog-box::before {
+  content: "";
+
+  position: absolute;
+  top: 0px;
+  right: 1160px;
+
+  width: calc((100vw - 1160px) / 2);
+  height: 100%;
+
+  background: linear-gradient(to bottom, #dbdbdb 0px, #dbdbdb 68px, #efefef 68px);
+}
+
+.catalog-box::after {
+  content: "";
+
+  position: absolute;
+  top: 0px;
+  left: 1160px;
+
+  width: calc((100vw - 1160px) / 2 - 17px);
+  height: 100%;
+
+  background: linear-gradient(to bottom, #ebebeb 0px, #ebebeb 68px, #ffffff 68px);
+}
+
+.catalog-box h2 {
   margin: 25px 0;
   padding: 0;
 
@@ -1458,6 +1449,13 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
   letter-spacing: 0.25em;
   text-align: left;
+}
+
+.filters {
+  width: 200px;
+  padding: 0 66px 0 60px;
+
+  background: linear-gradient(to bottom, #dbdbdb 68px, #efefef 68px);
 }
 
 .filters form {
