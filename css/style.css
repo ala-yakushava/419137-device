@@ -1672,6 +1672,11 @@ input[type="radio"].visually-hidden {
   color: #000000;
 }
 
+.sort-by-type {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .sort-by-type a {
   padding-right: 28px;
 }
