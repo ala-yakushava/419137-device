@@ -192,7 +192,7 @@ input[type="radio"].visually-hidden {
 .user-navigation {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-self: center;
 
   width: 500px;
@@ -201,14 +201,18 @@ input[type="radio"].visually-hidden {
   line-height: 36px;
 }
 
+.user-navigation li:nth-child(3n-2) {
+  margin-right: auto;
+}
+
+.user-navigation li:nth-child(3n) {
+  margin-left: 35px;
+}
+
 .user-navigation a {
   position: relative;
 
-  padding-left: 63px;
-}
-
-.user-navigation .login {
-  padding-left: 27px;
+  padding-left: 26px;
 }
 
 .user-navigation .login-off {
@@ -220,7 +224,7 @@ input[type="radio"].visually-hidden {
 
   position: absolute;
   top: 3px;
-  left: 1px;
+  left: 0px;
 
   width: 15px;
   height: 15px;
@@ -233,7 +237,7 @@ input[type="radio"].visually-hidden {
 
   position: absolute;
   top: 5px;
-  left: 43px;
+  left: 6px;
 
   width: 15px;
   height: 15px;
@@ -246,7 +250,7 @@ input[type="radio"].visually-hidden {
 
   position: absolute;
   top: 2px;
-  left: 41px;
+  left: 4px;
 
   width: 15px;
   height: 15px;
