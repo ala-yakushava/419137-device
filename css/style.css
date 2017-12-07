@@ -406,6 +406,8 @@ input[type="radio"].visually-hidden {
   height: 12px;
   margin-left: 20px;
 
+  vertical-align: baseline;
+
   background-color: inherit;
   border: 1px solid #000000;
   border-radius: 50%;
@@ -557,6 +559,7 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
   letter-spacing: 0.2em;
   text-align: center;
+  vertical-align: baseline;
 
   background: linear-gradient(to bottom, transparent 16px, #f0c52e 16px, #f0c52e 23px, transparent 23px);
   border: none;
@@ -1533,6 +1536,7 @@ input[type="radio"].visually-hidden {
   font-weight: 300;
   color: rgba(0, 0, 0, 0.2);
   white-space: nowrap;
+  vertical-align: baseline;
 }
 
 .toggle-min span {
@@ -1858,6 +1862,8 @@ input[type="radio"].visually-hidden {
 
   padding: 26px;
   padding-left: 30px;
+
+  vertical-align: baseline;
 }
 
 .pagination-item a:hover,
