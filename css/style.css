@@ -1366,6 +1366,7 @@ input[type="radio"].visually-hidden {
 
 .breadcrumbs-list {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .breadcrumbs a {
